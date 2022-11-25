@@ -22,6 +22,7 @@ impl From<io::Error> for ClientError {
     }
 }
 
+/// A P2P client that needs the centralized server to get addresses, and then bypasses it.
 pub struct Client<'a> {
     server_addr: (&'a str, u16),
     own_addr: Option<(&'a str, u16)>,

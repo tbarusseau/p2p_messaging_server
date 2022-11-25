@@ -6,6 +6,7 @@ use std::{
 
 use crate::{client::ClientMessageType, get_data, Addr, Identifier};
 
+/// A P2P central server that serves as an addresses index for registered clients.
 pub struct CentralServer {
     addr: Addr,
     buffer: Vec<u8>,
